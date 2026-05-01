@@ -10,7 +10,7 @@ export function AboutMd() {
         prose-strong:text-foreground prose-strong:font-semibold
         prose-p:text-foreground/90 prose-p:leading-relaxed
         prose-a:text-primary">
-        <ReactMarkdown remarkGfm={[remarkGfm] as never} remarkPlugins={[remarkGfm]}>
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {aboutMd}
         </ReactMarkdown>
       </div>
