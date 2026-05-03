@@ -1,5 +1,4 @@
-Here is the clean version of your `README.md` with all citations removed.
-
+ 
 # Mohammad Afroze | AI/ML Engineer
 
 I am a Machine Learning Engineer specializing in building end-to-end ML systems for healthcare applications. My expertise spans from data preprocessing to architecting scalable cloud infrastructure using AWS, PyTorch, and FastAPI.
