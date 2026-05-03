@@ -121,6 +121,16 @@
   .scrollbar-thin::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 4px; }
   .scrollbar-thin::-webkit-scrollbar-thumb:hover { background: hsl(var(--muted-foreground)); }
 
+  @keyframes photo-scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-photo-scroll {
+    display: flex;
+    width: max-content;
+    animation: photo-scroll 28s linear infinite;
+  }
+
   @keyframes blink {
     0%, 49% { opacity: 1; }
     50%, 100% { opacity: 0; }

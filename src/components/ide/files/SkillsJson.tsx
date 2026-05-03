@@ -4,17 +4,15 @@ export function SkillsJson() {
   return (
     <div className="p-6 md:p-10 fade-in">
       <h2 className="font-mono text-2xl mb-1 gradient-text">skills.json</h2>
-      <p className="text-sm text-muted-foreground mb-8">// Tools I reach for, grouped by where they live in the stack.</p>
+      <p className="text-base text-muted-foreground mb-8 font-mono">
+        {"// tools I reach for, grouped by where they live in the stack"}
+      </p>
 
-      <div className="grid gap-6">
+      <div className="grid gap-8">
         {skillsCategories.map((cat) => (
           <div key={cat.category}>
-            <h3 className="text-sm font-semibold text-[hsl(var(--syntax-keyword))] mb-3">
-              <span className="text-muted-foreground">"</span>
-              {cat.category.toLowerCase().replace(/[\s/&]+/g, "_")}
-              <span className="text-muted-foreground">": [</span>
-            </h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 ml-4">
+            <p className="text-sm font-mono text-primary mb-3 uppercase tracking-wider">{cat.category}</p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
               {cat.items.map((s) => (
                 <div
                   key={s.name}
@@ -25,15 +23,12 @@ export function SkillsJson() {
                     alt={s.name}
                     className="w-5 h-5 opacity-80 group-hover:opacity-100 transition-opacity"
                     loading="lazy"
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).style.display = "none";
-                    }}
+                    onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
                   />
-                  <span className="text-sm">{s.name}</span>
+                  <span className="text-base">{s.name}</span>
                 </div>
               ))}
             </div>
-            <div className="text-muted-foreground text-sm mt-2">],</div>
           </div>
         ))}
       </div>
