@@ -32,7 +32,7 @@ const credentials = [
 
 const stats = [
   { value: "3",    label: "Startups\nInterned" },
-  { value: "✦",    label: "Backend Dev\n@ Lungsense.ai" },
+  { value: "✦",    label: "AI/ML Engineer\n@ lungsense.ai" },
   { value: "2",    label: "Hackathons\nWon" },
   { value: "500+", label: "Teams\nBeaten" },
   { value: "3",    label: "Deep Learning\nModels" },
@@ -82,7 +82,7 @@ export function AboutMd() {
             <K>production AI systems</K> in real-world <Fn>healthcare</Fn> environments.
           </p>
           <p className="mt-3 leading-8 text-foreground/85">
-            Today I'm an <K>AI/ML Engineer</K> at <Fn>DigiBiomics</Fn> — a <S>Canadian MedTech company</S> — where I contributed to <Fn>lungsense.ai</Fn>, a live production platform actively used by a rural hospital and internally tested by a Canadian institution. I build backend systems and AI pipelines for respiratory diagnostics using <K>FastAPI</K>, <K>AWS</K>, and <K>PyTorch</K>, collaborating fully remotely across time zones.
+            Today I'm an <K>AI/ML Engineer</K> at <Fn>DigiBiomics</Fn> — a <S>Canadian MedTech company</S> — where I contributed to <Fn>lungsense.ai</Fn>, a live production platform actively used by a indian hospital and internally validated by a Canadian institution. I build backend systems and AI pipelines for respiratory diagnostics using <K>FastAPI</K>, <K>AWS</K>, and <K>PyTorch</K>, collaborating fully remotely across time zones.
           </p>
         </div>
       </section>
@@ -96,7 +96,7 @@ export function AboutMd() {
           {stats.map((s) => (
             <div key={s.label} className="text-center px-2 py-3 rounded-md bg-muted/50 border border-border">
               <div className="font-mono text-2xl font-bold gradient-text">{s.value}</div>
-              <div className="text-xs text-muted-foreground mt-1 whitespace-pre-line leading-tight">{s.label}</div>
+              <div className="text-xs gradient-text mt-1 whitespace-pre-line leading-tight">{s.label}</div>
             </div>
           ))}
         </div>
@@ -143,12 +143,12 @@ export function AboutMd() {
             {
               icon: "🧠",
               title: "AI / ML Systems",
-              body: (<>Deep learning pipelines with <K>PyTorch</K>, <K>ResNet-18</K>, <K>CNN-BiLSTM</K>. Trained on <Num>24,520</Num> samples — <Num>94.5%</Num> accuracy.</>),
+              body: (<>Deep learning pipelines with <K>PyTorch</K>, <K>ResNet-18</K>, <K>CNN-BiLSTM</K>. Trained on <Num>24,520</Num> samples — <Num>92.3%</Num> accuracy.</>),
             },
             {
               icon: "⚡",
               title: "Production Backends",
-              body: (<><K>FastAPI</K> + <K>SQLAlchemy</K> with <Num>52</Num> REST endpoints, <K>PostgreSQL</K>, rate limiting, serving live hospital data <Num>10+</Num> cases/day.</>),
+              body: (<><K>FastAPI</K> + <K>SQLAlchemy</K> with <Num>52</Num> REST endpoints, <K>PostgreSQL</K>, rate limiting, serving live hospital data , <Num>10+</Num> cases/day.</>),
             },
             {
               icon: "☁️",
@@ -158,7 +158,7 @@ export function AboutMd() {
           ].map((card) => (
             <div key={card.title} className="rounded-lg p-[1px] gradient-border">
               <div className="bg-card rounded-lg p-5 h-full">
-                <div className="text-2xl mb-2">{card.icon}</div>
+                <div className="tex94.5t-2xl mb-2">{card.icon}</div>
                 <h3 className="font-mono font-semibold text-foreground mb-2 text-base">{card.title}</h3>
                 <p className="text-base text-foreground/80 leading-7">{card.body}</p>
               </div>

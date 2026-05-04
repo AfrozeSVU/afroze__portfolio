@@ -126,8 +126,9 @@ export function AppPy() {
                   <p className="text-sm text-foreground/80 leading-relaxed font-sans-prose">{w.description}</p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {w.chips.map((c) => (
-                      <span key={c} className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-muted border border-border text-muted-foreground">
-                        {c}
+                      // <span key={c} className="text-[11px] font-mono px-2 py-0.5 rounded-md bg-muted border border-border text-muted-foreground">
+                      <span key={c} className="text-xs font-mono px-2 py-0.5 rounded-md bg-primary/10 border border-primary/30 text-primary">  
+                      {c}
                       </span>
                     ))}
                   </div>

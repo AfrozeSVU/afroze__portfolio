@@ -7,7 +7,7 @@ export const experienceData = [
     period: "Sep 2025 — Present",
     location: "Remote · Canada 🇨🇦",
     highlights: [
-      "Contributed to lungsense.ai — a live production healthcare AI platform actively used by a rural hospital and internally tested by a Canadian institution. The platform captures cough sounds, chest X-rays, and patient demographics, supporting end-to-end workflows for patients and practitioners from data collection to diagnosis.",
+      "Contributed to lungsense.ai — a live production healthcare AI platform actively used by a indian hospital and internally validated by a Canadian institution. The platform captures cough sounds, chest X-rays, and patient demographics, supporting end-to-end workflows for patients and practitioners from data collection to diagnosis.",
       "Developed 3 deep learning models (ResNet-18, CNN-BiLSTM) using PyTorch on AWS SageMaker for respiratory diagnostics; trained on 24,520 samples — 89.6% accuracy (X-ray), 92.59% accuracy (chest sounds), 0.83 AUC-ROC (cough sounds).",
       "Architected production backend with FastAPI + SQLAlchemy: 52 REST endpoints, PostgreSQL, rate limiting (100 req/min), round-robin auto-assignment — serving live hospital deployment with 10+ cases/day.",
       "Deployed AWS infra serving live hospital platform; migrated to S3 presigned URLs (boto3) reducing EC2 load by 100%; resolved iOS/Android audio incompatibility via Web Audio API WAV — 100% cross-platform compatibility.",
@@ -135,17 +135,17 @@ export const profile = {
 
 export const featuredWork = [
   {
-    title: "Lungsense.ai @ DigiBiomics",
+    title: "lungsense.ai @ DigiBiomics",
     tag: "Healthcare AI · Production · Live in Hospitals",
     description:
-      "Contributed to lungsense.ai — an end-to-end healthcare AI platform actively used by a rural hospital and internally tested by an institution in Canada. The platform captures and structures clinical data including cough sounds, chest X-rays, and patient demographics, with seamless authentication and workflows for both patients and practitioners — from data collection to diagnosis support.",
+      "Contributed to lungsense.ai — an end-to-end healthcare AI platform actively used by a indian hospital and internally validated by an institution in Canada. The platform captures and structures clinical data including cough sounds, chest X-rays, and patient demographics, with seamless authentication and workflows for both patients and practitioners — from data collection to diagnosis support.",
     chips: ["PyTorch", "FastAPI", "AWS SageMaker", "S3", "PostgreSQL"],
   },
   {
     title: "AgroNexus — National Hackathon Winner",
     tag: "AgriTech · 1st Place / 500+ teams",
     description:
-      "Engineered a full-stack agri-tech platform bridging farmer–consumer gaps with direct markets, expert consultations, and access to digital tools. Integrated Gemini, Geolocation, and Web Speech APIs; automated insights via Puppeteer + Google Play Scraper.",
+      "Engineered a full-stack agri-tech platform bridging farmer–consumer gaps with direct markets, expert consultations, and access to digital tools. Integrated Gemini, Geolocation, and Web Speech APIs; automated insights via streamlining the entire workflow using Puppeteer increased user engagement by 30%. ",
     chips: ["React", "Node.js", "MongoDB", "Gemini API", "Puppeteer"],
   },
 ];

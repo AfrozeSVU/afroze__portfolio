@@ -91,7 +91,7 @@ const IDE = () => {
                     }`}
                   >
                     <Icon className={`w-4 h-4 shrink-0 ${color}`} />
-                    <span>{name}</span>
+                    <span className="gradient-text font-semibold">{name}</span>
                   </button>
                 </li>
               );
@@ -154,6 +154,8 @@ const IDE = () => {
           <SidebarContent />
         </aside>
 
+        
+
         {/* Editor area */}
         <main className="flex-1 flex flex-col min-w-0 bg-[hsl(var(--editor))]">
           {/* Tab bar */}
@@ -170,8 +172,8 @@ const IDE = () => {
 
           {/* Content */}
           <div className="flex-1 min-h-0 p-1.5 md:p-4">
-            <div className="h-full gradient-border rounded-lg overflow-hidden">
-              <div className="h-full bg-[hsl(var(--editor))] rounded-lg overflow-auto scrollbar-thin">
+            <div className="h-full gradient-border  rounded-lg overflow-hidden">
+              <div className="h-full bg-[hsl(var(--editor))]  rounded-lg overflow-auto scrollbar-thin">
                 <Renderer key={active} />
               </div>
             </div>

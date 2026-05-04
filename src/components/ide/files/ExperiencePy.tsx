@@ -93,9 +93,11 @@ export function ExperiencePy() {
             return (
               <div key={i} className="pl-10 relative">
                 {/* timeline dot */}
-                <div className="absolute left-0 top-2 w-6 h-6 rounded-full gradient-bg flex items-center justify-center z-10">
-                  <div className="w-2 h-2 rounded-full bg-primary-foreground" />
+                <div className="absolute left-0 top-2 w-6 h-6 rounded-full gradient-text flex items-center justify-center z-10">
+                  <div className="w-2 h-2 rounded-full bg-primary-foreground gradient-text" />
                 </div>
+
+                
 
                 <div className="rounded-lg p-[1px] gradient-border overflow-hidden">
                   <div className="bg-card rounded-lg overflow-hidden">
@@ -114,8 +116,8 @@ export function ExperiencePy() {
                           <p className="text-base text-primary font-mono mt-0.5">{exp.company}</p>
                         </div>
                         <div className="text-right shrink-0">
-                          <p className="text-sm font-mono text-muted-foreground">{exp.period}</p>
-                          <p className="text-sm font-mono text-muted-foreground">{exp.location}</p>
+                          <p className="text-sm font-mono gradient-text">{exp.period}</p>
+                          <p className="text-sm font-mono gradient-text">{exp.location}</p>
                         </div>
                       </div>
 
